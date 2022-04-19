@@ -139,6 +139,16 @@ img{
     overflow: hidden;
 }
 
+.hero::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
 /* ! Poster */
 .titolo{
     max-width: 1400px;
@@ -161,6 +171,23 @@ img{
 .titolo h3{
     border: 1px solid blue;
 }
+
+
+.titolo span{
+    position: relative;
+}
+
+.titolo span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(25, 0, 255) , rgb(0, 183, 255));
+}
+
 
 .poster{
     display: flex;
@@ -206,6 +233,21 @@ img{
 
 .secondo_titolo h3{
     border: 1px solid blue;
+}
+
+.secondo_titolo span{
+    position: relative;
+}
+
+.secondo_titolo span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(25, 0, 255) , rgb(0, 183, 255));
 }
 
 .secondo_poster{
