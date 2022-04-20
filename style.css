@@ -5,7 +5,9 @@ a{text-decoration: none;}
 
 h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
 
-p{line-height: 28px;font-weight: 400;}
+p{line-height: 28px;font-weight: 500; color: rgb(116, 114, 114);}
+
+p span{font-weight: 600; font-size: 40px;}
 
 .big-text{font-size: 70px; font-weight: 900;}
 .med-text{font-size: 40px; font-weight: 900;}
@@ -185,7 +187,7 @@ img{
     left: 0;
     height: 5px;
     border-radius: 5px;
-    background: linear-gradient(to right, rgb(25, 0, 255) , rgb(0, 183, 255));
+    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
 }
 
 
@@ -218,6 +220,9 @@ img{
     padding: 50px;
 }
 
+
+/* Secondo blocco */
+
 .secondo_titolo{
     max-width: 1400px;
     display: flex;
@@ -247,7 +252,7 @@ img{
     left: 0;
     height: 5px;
     border-radius: 5px;
-    background: linear-gradient(to right, rgb(25, 0, 255) , rgb(0, 183, 255));
+    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
 }
 
 .secondo_poster{
@@ -279,6 +284,256 @@ img{
     padding: 0;
 }
 
+
+/* Terzo blocco - sfondo con testo dentro in blur */
+
+.terzo_poster{
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.terzo_poster__img{
+    width: 100%;
+}
+.terzo_poster__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.terzo_poster__content{
+    width: 40%;
+    top: 50%;
+    left: 60%;
+    display: inline-block;
+    position: absolute;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.terzo_poster__content p{
+    color: rgb(46, 45, 45);
+}
+
+.line_span{
+    position: relative;
+}
+
+.line_span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+}
+
+
+/* Quarto blocco - immagine grigia */
+
+.quarto_titolo{
+    max-width: 1400px;
+    display: flex;
+    position: relative;
+    align-items: right;
+    justify-content: right;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.quarto_titolo h3{
+    border: 1px solid blue;
+}
+
+.quarto_titolo span{
+    position: relative;
+}
+
+.quarto_titolo span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+}
+
+.quarto_poster{
+    display: flex;
+    
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-image: url("assets/15.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid black;
+}
+
+
+.quarto_poster__img{
+    max-width: 700px;
+}
+.quarto_poster__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.quarto_poster__content{
+    width: 50%;
+    padding: 0 80px;
+}
+
+
+/* Quinto blocco - Immagine di sfondo a metà con testo sopra */
+
+.quinto_poster{
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.quinto_poster__img{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+}
+.quinto_poster__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.quinto_poster__content{
+    width: 40%;
+    display: inline-block;
+    margin-left: 0;
+    position: absolute;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    box-shadow: -5px -5px 30px #a7a6a6;
+}
+
+.quinto_poster__content h3{
+    padding-bottom: 20px;
+}
+
+.quinto_poster__content p{
+    color: rgb(46, 45, 45);
+    padding-top: 10px;
+}
+
+
+/* Sesto e ultimo blocco - Team */
+
+.sesto_titolo{
+    max-width: 1400px;
+    display: flex;
+    position: relative;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.sesto_titolo h3{
+    border: 1px solid blue;
+}
+
+.sesto_titolo span{
+    position: relative;
+}
+
+.sesto_titolo span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+}
+
+.sesto_poster{
+    display: flex;
+    
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+.sesto_poster__content{
+    width: 50%;
+    padding: 0 80px;
+}
+
+.sesto_poster__img{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.dot{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.grid{
+    display: flex;
+    max-width: 1350px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.grid .col{width: 100%;}
+
+
 @media (max-width: 768px) {
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img,
@@ -286,6 +541,7 @@ img{
     .secondo_poster{flex-wrap: wrap;height: auto;}
     .secondo_poster__img,
     .secondo_poster__content{width: 100%;}
+    .grid{flex-wrap: wrap;}
 }
 
 
