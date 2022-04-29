@@ -151,7 +151,7 @@ img{
     display: flex; 
     width: 100%;
     align-items: center;
-    background: url('assets/IMG_2974.png') no-repeat center center;
+    background: url('assets/home_opening_big_pic.png') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -268,7 +268,9 @@ img{
     left: 0;
     height: 10px;
     border-radius: 5px;
+    
     background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+    /*  background-image: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);  */
 }
 
 .secondo_poster{
@@ -329,9 +331,15 @@ img{
     display: inline-block;
     position: absolute;
     padding: 20px 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
+    background: rgba(240, 250, 255, 0.30);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2px 60px 0 rgba(61, 111, 162, 0.21);
+    /* border-radius: 10px; */
+    border-top-left-radius: 32px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 32px;
 }
 
 .terzo_poster__content p{
@@ -453,10 +461,12 @@ img{
     margin-left: 0;
     position: absolute;
     padding: 20px 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
-    box-shadow: -5px -5px 30px #a7a6a6;
+    border-radius: 32px;
+    background: rgba(240, 250, 255, 0.30);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2px 60px 0 rgba(61, 111, 162, 0.21);
+    /*box-shadow: -5px -5px 30px #a7a6a6;*/
 }
 
 .quinto_poster__content h3{
@@ -613,4 +623,10 @@ img{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.glass-box {
+    background: rgba(240,250,255,0.30);
+    box-shadow: 0 2px 60px 0 rgba(61,111,162,0.24);
+    border-radius: 32px;
 }
