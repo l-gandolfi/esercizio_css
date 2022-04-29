@@ -1,14 +1,21 @@
 /* ! Base Style */
 body{font-family: 'Inter', sans-serif;}
 
+@font-face {
+    font-family: "PingFang-Medium";
+    src: url("assets/fonts/PingFang_Medium.ttf") format('truetype');
+}
+
 a{text-decoration: none;}
 
 h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
 
 p{
-    line-height: 28px;
-    font-weight: 500;
-    color: rgb(116, 114, 114);
+    font-family: "PingFang-Medium";
+    opacity: 0.6;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -21,7 +28,20 @@ p span{font-weight: 600; font-size: 40px;}
 .small-text{font-size: 14px;}
 .intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
 
-.button{padding: 18px 28px; background-color: #316bff; color: #fff; display: inline-block; border-radius: 6px;}
+.button{
+    width: 528px;
+    height: 72px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%); 
+    color: #fff; 
+    display: inline-block; 
+    border-radius: 36px;
+    font-weight: 700;
+    font-family: "sans serif";
+    font-size: 21px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    padding-top: 25.5px;
+}
 
 
 @media (max-width: 768px) {
@@ -233,6 +253,13 @@ img{
 .poster__content{
     width: 50%;
     padding: 50px;
+}
+
+.download_button{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
 }
 
 
