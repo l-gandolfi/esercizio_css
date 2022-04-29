@@ -219,11 +219,12 @@ img{
     content: "";
     position: absolute;
     top: 100%;
+    margin-top: 8px;
     width: 100%;
     left: 0;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+    height: 14px;
+    border-radius: 7px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
 
@@ -291,13 +292,14 @@ img{
     content: "";
     position: absolute;
     top: 100%;
+    margin-top: 8px;
     width: 100%;
     left: 0;
-    height: 10px;
-    border-radius: 5px;
+    height: 14px;
+    border-radius: 7px;
     
-    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
-    /*  background-image: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);  */
+    /*background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234)); */
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
 .secondo_poster{
@@ -383,9 +385,9 @@ img{
     top: 100%;
     width: 100%;
     left: 0;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+    height: 14px;
+    border-radius: 7px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
 
@@ -417,11 +419,12 @@ img{
     content: "";
     position: absolute;
     top: 100%;
+    margin-top: 8px;
     width: 100%;
     left: 0;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+    height: 14px;
+    border-radius: 7px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
 .quarto_poster{
@@ -506,7 +509,7 @@ img{
 }
 
 
-/* Sesto e ultimo blocco - Team */
+/* Sesto blocco - Team */
 
 .sesto_titolo{
     max-width: 1400px;
@@ -534,11 +537,12 @@ img{
     content: "";
     position: absolute;
     top: 100%;
+    margin-top: 8px;
     width: 100%;
     left: 0;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(to right, rgb(119, 0, 255) , rgb(0, 255, 234));
+    height: 14px;
+    border-radius: 7px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
 .sesto_poster{
@@ -592,6 +596,99 @@ img{
 
 .grid .col{width: 100%;}
 
+/* Settimo blocco */
+.settimo_titolo{
+    max-width: 1400px;
+    display: flex;
+    position: relative;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.settimo_titolo span{
+    position: relative;
+}
+
+.settimo_titolo span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin-top: 8px;
+    left: 0;
+    height: 14px;
+    border-radius: 7px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
+}
+
+.settimo_poster{
+    display: flex;
+    
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.settimo_poster__content{
+    width: 50%;
+}
+
+.settimo_poster__content_2{
+    width: 50%;
+}
+
+.email_input{
+    height: 72px;
+    width: 465px;
+    border-radius: 36px;
+    background: #EDEDED;
+    outline:0;
+    border:0;
+    display: inline-block; 
+}
+
+.subscribe_button{
+    margin-left: 24px;
+    height: 72px;
+    width: 150px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%); 
+    color: #fff; 
+    display: inline-block; 
+    border-radius: 36px;
+    font-weight: 700;
+    font-family: "sans serif";
+    font-size: 20px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 25.5px;
+}
+
+.intouch_button{
+    margin-left: 24px;
+    height: 72px;
+    width: 217px;
+    background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%); 
+    color: #fff; 
+    border-radius: 36px;
+    font-weight: 700;
+    font-family: "sans serif";
+    font-size: 20px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 25.5px;
+    float: right;
+}
 
 @media (max-width: 768px) {
     .poster{flex-wrap: wrap;height: auto;}
