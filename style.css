@@ -8,6 +8,11 @@ body{
     src: url("assets/fonts/PingFang_Medium.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "ArialBlk";
+    src: url("assets/fonts/ArialBlack.ttf") format('truetype');
+}
+
 a{text-decoration: none;}
 
 h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
@@ -27,12 +32,12 @@ p span{font-weight: 600; font-size: 40px;}
 .big-text{
     font-size: 70px; 
     font-weight: 900;
-    font-family: "Arial Black", "Arial-Black";
+    font-family: "Arial Black", "Arial-Black", "ArialBlk";
 }
 .med-text{
     font-size: 48px; 
     font-weight: 900;
-    font-family: "Arial Black", "Arial-Black";
+    font-family: "Arial Black", "Arial-Black", "ArialBlk";
 }
 .normal-text{
     /*non usato*/
@@ -57,7 +62,7 @@ p span{font-weight: 600; font-size: 40px;}
     display: inline-block; 
     border-radius: 36px;
     font-weight: 700;
-    font-family: "Arial-Black";
+    font-family: "Arial Black", "Arial-Black", "ArialBlk";
     font-size: 21px;
     letter-spacing: -0.24px;
     text-align: center;
@@ -375,12 +380,12 @@ img{
 }
 
 .terzo_poster__content{
-    width: 40%;
-    top: 50%;
-    left: 60%;
+    width: 651px;
+    top: 60%;
+    right: 0%;
     display: inline-block;
     position: absolute;
-    padding: 20px 20px;
+    padding: 43px 43px;
     background: rgba(240, 250, 255, 0.30);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -417,9 +422,9 @@ img{
 .quarto_titolo{
     max-width: 1400px;
     display: flex;
+    flex-direction: row-reverse;
     position: relative;
-    align-items: right;
-    justify-content: right;
+
     width: 100%;
     left: 0;
     right: 0;
@@ -507,11 +512,11 @@ img{
 }
 
 .quinto_poster__content{
-    width: 40%;
+    width: 651px;
     display: inline-block;
     margin-left: 0;
     position: absolute;
-    padding: 20px 20px;
+    padding: 43px 43px;
     border-radius: 32px;
     background: rgba(240, 250, 255, 0.30);
     backdrop-filter: blur(20px);
@@ -686,7 +691,7 @@ img{
     display: inline-block; 
     border-radius: 36px;
     font-weight: 700;
-    font-family: "Arial-Black";
+    font-family: "Arial Black", "Arial-Black", "ArialBlk";
     font-size: 21px;
     letter-spacing: -0.24px;
     text-align: center;
@@ -702,7 +707,7 @@ img{
     color: #fff; 
     border-radius: 36px;
     font-weight: 700;
-    font-family: "Arial-Black";
+    font-family: "Arial Black", "Arial-Black", "ArialBlk";
     font-size: 21px;
     letter-spacing: -0.24px;
     text-align: center;
@@ -763,6 +768,7 @@ img{
 .mt-1{margin-top: 50px;}
 .mt-2{margin-top: 100px;}
 .mt-3{margin-top: 150px;}
+.pb-0{padding-bottom: 0px;}
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
