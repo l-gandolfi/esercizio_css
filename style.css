@@ -1,5 +1,7 @@
 /* ! Base Style */
-body{font-family: 'Inter', sans-serif;}
+body{
+    font-family: 'Inter', sans-serif;
+}
 
 @font-face {
     font-family: "PingFang-Medium";
@@ -25,12 +27,13 @@ p span{font-weight: 600; font-size: 40px;}
 .big-text{
     font-size: 70px; 
     font-weight: 900;
-    font-family: "Arial-Black";
+    font-family: "Arial Black", "Arial-Black";
 }
 .med-text{
     font-size: 48px; 
     font-weight: 900;
-    font-family: "Arial-Black";}
+    font-family: "Arial Black", "Arial-Black";
+}
 .normal-text{
     /*non usato*/
     font-size: 20px;
