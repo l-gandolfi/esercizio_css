@@ -785,6 +785,7 @@ img{
 .footer{
     width: 100%;
     bottom:0;
+    height: 100px;
     display: flex;
     background-color: #000;
     max-height: 100px;
@@ -795,26 +796,37 @@ img{
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
+    display: flex;
+    line-height: 100px;
 }
 
 .footer__text{
-    height: 64px;
     margin-left: auto; 
     margin-right: 0;
     z-index: 0;
     float: right;
-    margin-top: 18px;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
 }
 
 .footer__p{
     align-items: center;
     font-size: 25px;
     padding-bottom: 0;
-    padding-top: 15px;
     color: #fff;
+}
+
+.logo_bottom{
+    display: inline-block;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.logo_bottom img{
+    display: inline-block;
+    margin-right: auto;
+    vertical-align: middle;
 }
 
 
