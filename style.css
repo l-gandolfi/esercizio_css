@@ -96,7 +96,6 @@ p span{font-weight: 600; font-size: 40px;}
     transform: translateX(-50%);
     padding: 0;
     display: flex;
-    max-width: 1920px;
     max-height: 100px;
     z-index: 10;
 
@@ -228,6 +227,8 @@ img{
     left: 0;
     right: 0;
     margin: 0 auto;
+    height: 310px;
+    background: url("assets/panel_1_doppio_cerchio.png") right top no-repeat;
 }
 
 /*
@@ -264,11 +265,16 @@ img{
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    background: url("assets/panel_1_cerchio_piccolo_blur.png") -10% 400% no-repeat,
+                url("assets/panel_1_panel_cerchio_grande_blur.png") 45% 0 no-repeat;
+
 }
 
 
 .poster__img{
     max-width: 700px;
+    padding-left: 10px;
 }
 .poster__img img{
     object-fit: cover;
@@ -614,6 +620,12 @@ img{
 .sesto_poster__img{
     width: 45%;
     padding: 0 10px;
+    display: inline-block;
+}
+
+.sesto_poster__img img{
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 .dot{
