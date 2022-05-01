@@ -79,7 +79,8 @@ p span{font-weight: 600; font-size: 40px;}
 .page {
     /*width: 1920px;*/
     width: 100%;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
+    margin: auto;
     /*height: 1080px;*/
 }
 
@@ -154,7 +155,6 @@ img{
     height: 64px;
     display: inline-block;
     z-index: 1;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     margin-top: 18px;
@@ -679,7 +679,8 @@ img{
     background: #EDEDED;
     outline:0;
     border:0;
-    display: inline-block; 
+    display: inline-block;
+    padding-left: 30px;
 }
 
 .subscribe_button{
@@ -760,6 +761,7 @@ img{
     font-size: 25px;
     padding-bottom: 0;
     padding-top: 15px;
+    color: #fff;
 }
 
 
