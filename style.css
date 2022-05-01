@@ -183,19 +183,17 @@ img{
         background: url("assets/logo_mobile_cerchi.png") left center no-repeat,
                     url("assets/logo_mobile_testo.png") center center no-repeat;
         background-size: 40px 40px, 100px 40px;
-        border: 1px solid yellow;
     }
     .hamburger{
         display: block;
         width: 30px;
         height: 30px;
         position: absolute;
-        border: 1px solid green;
         right: 15px;
         top: 25px;
     }
     .hamburger span{background-color: #fff;height: 3px;width: 100%;display: block;margin-bottom: 5px;}
-    .menu{position: absolute;top: 0; right: -100%; padding-top: 550px;}
+    .menu{position: absolute;top: 0; right: -100%; padding-top: 550px; background-color: #000;}
     .menu--open{right: 0%; z-index: 0;}
     .menu li{display: block;}
     .menu li a{padding-left: 15px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px; font-size: 20px;}
@@ -211,6 +209,7 @@ img{
     background: url('assets/home_opening_big_pic.png') no-repeat center center;
     background-size: cover;
     position: relative;
+    margin-top: 100px;
     overflow: hidden;
 }
 /*
@@ -226,8 +225,9 @@ img{
 */
 @media (max-width: 768px){
     .hero{
-        border: 1px solid red;
         width: 100vw;
+        height: 200px;
+        margin-top: 70px;
     }
     .hero::after{
         display: flex;
