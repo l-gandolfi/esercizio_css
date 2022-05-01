@@ -77,7 +77,7 @@
             -->
         </div>
         
-        <div class="titolo mt-3">
+        <div class="titolo mt-3 reveal">
             <h3 class="big-text">WELCOME <span>TO</span> PARALLEL OFFICE</h3>
         </div>
 
@@ -98,17 +98,17 @@
                 <img src="assets/poster_1.JPG" alt="">
             </div>
         </div>
-        <div class="download_button mt-2">
+        <div class="download_button mt-2 reveal">
             <a href="" class="button">
                 DOWNLOAD THE WHITEPAPER
             </a>
         </div>
 
-        <div class="secondo_titolo mt-3">
+        <div class="secondo_titolo mt-3 reveal_top">
             <h3 class="med-text">POWERED BY <span>BLOCKCHAIN</span></h3>
         </div>
         <div class="secondo_poster">
-            <div class="secondo_poster__content reveal">
+            <div class="secondo_poster__content reveal_top">
                 <p>
                     <img src="assets/16.png" alt="" width="45px"> &ensp;&emsp;
                     <span>T</span>he future is decentralized! Parallel Office is built with blockchain technology at its core: 
@@ -126,10 +126,10 @@
         </div>
 
         <div class="terzo_poster mt-3">
-            <div class="terzo_poster__img">
+            <div class="terzo_poster__img reveal_left">
                 <img src="assets/poster_3.png" alt="">
             </div>
-            <div class="terzo_poster__content reveal">
+            <div class="terzo_poster__content reveal_right">
                 <h3 class="med-text">EXCLUSIVE <span class="line_span">NFT</span></h3>
                 <p class="pb-0">
                     <span>I</span>n our metaverse all offices, furnitures, accessories for avatars are NFTs, hence you can create your unique office and differentiate your avatar from others. 
@@ -139,7 +139,7 @@
             </div>
         </div>
 
-        <div class="quarto_titolo mt-3">
+        <div class="quarto_titolo mt-3 reveal_right">
             <h3 class="med-text">FIND YOUR <span>TALENT</span> AND GET HIRED</h3>
         </div>
         <div class="quarto_poster">
@@ -151,10 +151,10 @@
                 </div>
             </div>
             -->
-            <div class="quarto_poster__img mt-2">
+            <div class="quarto_poster__img mt-2 reveal_right">
                 <img src="assets/IMG_2913_5.png" alt="">
             </div>
-            <div class="quarto_poster__content reveal mt-2">
+            <div class="quarto_poster__content reveal_right mt-2">
                 <p>
                     <img src="assets/16.png" alt="" width="45px"> &ensp;&emsp;
                     <span>A</span> metaverse platform dedicated to startup founders, business owners and HR specialists who are looking for talented individuals to set up international teams, 
@@ -166,7 +166,7 @@
         </div>
 
         <div class="quinto_poster mt-3">
-            <div class="quinto_poster__img">
+            <div class="quinto_poster__img reveal_left">
                 <img src="assets/poster_5.png" alt="">
             </div>
             <div class="quinto_poster__content reveal">
@@ -179,7 +179,7 @@
             </div>
         </div>
 
-        <div class="sesto_titolo mt-3">
+        <div class="sesto_titolo mt-3 reveal_left">
             <h3 class="med-text"><span>TEAM</span> INFORMATION</h3> 
         </div>
         <div class="sesto_poster">
@@ -190,15 +190,16 @@
                 </p>
             </div> 
             <div class="sesto_poster__img">
-                <img src="assets/logo_T_mytokenspace.png" alt="">
-                <img src="assets/logo_4bmc.png" alt="">
+                <img src="assets/logo_T_mytokenspace.png" alt="" class="reveal_right">
+                <img src="assets/logo_4bmc.png" alt="" class="reveal_right">
             </div>
         </div>
-        <div class="settimo_titolo mt-3">
+
+        <div class="settimo_titolo mt-3 reveal_top">
             <h3 class="med-text">STAY <span>TUNED</span> AND GET IN <span>TOUCH</span></h3> 
         </div>
         <div class="settimo_poster mt-1">
-            <div class="settimo_poster__content reveal">
+            <div class="settimo_poster__content reveal_left">
                 <p>
                     <img src="assets/16.png" alt="" width="45px"> &ensp;&emsp;
                     <span>G</span>et the latest updates on our Project! <br><br>
@@ -206,7 +207,7 @@
                 <input type="text" class="email_input" placeholder="email@paralleloffice.com">
                 <div class="subscribe_button">SIGN UP</div>
             </div>
-            <div class="settimo_poster__content_2 reveal">
+            <div class="settimo_poster__content_2 reveal_right">
                 <p>
                     <img src="assets/16.png" alt="" width="45px"> &ensp;&emsp;
                     <span>O</span>ur expert team will answer all your questions.<br>
@@ -253,6 +254,30 @@
                 distance: '100px',
                 duration: 1500, 
                 interval: 600
+            }
+        );
+        ScrollReveal().reveal('.reveal_top', 
+            { 
+                distance: '100px',
+                duration: 1500, 
+                interval: 600,
+                origin: 'top'
+            }
+        );
+        ScrollReveal().reveal('.reveal_right', 
+            { 
+                distance: '100px',
+                duration: 1800, 
+                interval: 700,
+                origin: 'right'
+            }
+        );
+        ScrollReveal().reveal('.reveal_left', 
+            { 
+                distance: '100px',
+                duration: 1800, 
+                interval: 700,
+                origin: 'left'
             }
         );
         ScrollReveal().reveal('.zoom', 
