@@ -182,7 +182,7 @@ img{
         margin-right: 15px;
         background: url("assets/logo_mobile_cerchi.png") left center no-repeat,
                     url("assets/logo_mobile_testo.png") center center no-repeat;
-        background-size: 40px 40px, 100px 40px;
+        background-size: 40px 40px, 105px 13px;
     }
     .hamburger{
         display: block;
