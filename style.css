@@ -779,6 +779,10 @@ img{
     float: right;
 }
 
+.intouch_button a{
+    color: #fff; 
+}
+
 @media (max-width: 768px) {
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img,
