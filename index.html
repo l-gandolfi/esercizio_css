@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,9 +62,11 @@
                     </li>
                 </ul>
                 <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="hamburger__span" ></span>
+                    <span class="hamburger__span" ></span>
+                    <span class="hamburger__span" ></span>
+                    <span class="arrow__down hidden" id="arrow1"></span><br>
+                    <span class="arrow__down hidden" id="arrow2"></span>
                 </div>
             </div>
         </div>
@@ -294,13 +294,40 @@
             });
         });
 
+        $( document ).ready(function () {
+            /* Change span */
+            $( ".hamburger" ).on('click', function() {
+                if ($("#arrow1").hasClass("hidden")){
+                    $(".hamburger__span").hide();
+                    $("#arrow1").removeClass("hidden");
+                    $("#arrow1").addClass("show");
+                    $("#arrow2").removeClass("hidden");
+                    $("#arrow2").addClass("show")
+                } else {
+                    $(".hamburger__span").show();
+                    $("#arrow1").removeClass("show");
+                    $("#arrow1").addClass("hidden");
+                    $("#arrow2").removeClass("show");
+                    $("#arrow2").addClass("hidden");
+                }
+                //$(".hamburger__span").toggleClass("hamburger__span--open");
+            });
+        });
+
+        if($(window).width() < 768){
+            $('.download_button').appendTo('.poster__content');
+            $('.poster__content').addClass('mt-1');
+            $('.secondo_titolo').removeClass('mt-3');
+        }
+        
+/*
         $(function() {
             $('a[href*=#]').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
             });
         });
-
+*/
         ScrollReveal().reveal('.reveal', 
             { 
                 distance: '100px',
