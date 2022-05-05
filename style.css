@@ -483,7 +483,20 @@ img{
     }
     .secondo_poster__img {
         width: 30px;
-        transform: translateY(-50%);
+        transform: translateX(45%);
+        position: absolute;
+        padding-top: 130px;
+    }
+    .secondo_poster__img img{
+        width: 50%;
+        height: 50%;
+    }
+    .secondo_poster__content{
+        width: 100%;
+        padding: 40px;
+    }
+    .secondo_poster{
+        margin-bottom: 70px;
     }
 }
 
@@ -546,6 +559,20 @@ img{
     background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
 }
 
+@media (max-width: 768px){
+    .terzo_poster__content{
+        width: 100%;
+        top: 0;
+        transform: translateY(80%);
+    }
+    .terzo_poster{
+        margin-bottom: 300px;
+    }
+    .line_span::before{
+        height: 8px;
+        margin-top: 2px;
+    }
+}
 
 /* Quarto blocco - immagine grigia */
 
@@ -634,6 +661,45 @@ img{
     padding-left: 10%;
 }
 
+@media (max-width: 768px){
+    .quarto_titolo{
+        transform: translateY(350px);
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .quarto_poster{
+        transform: translateY(-200px);
+        background: url("assets/panel_4_cerchio_grande.png") right 31% no-repeat,
+                url("assets/panel_4_cerchio_piccolo.png") left 55% no-repeat;
+        background-size: 30%, 20%;
+    }
+    .quarto_poster__img{
+        width: 100%;
+        padding: 40px;
+        position: absolute;
+        align-items: center;
+        transform: translateY(-89px);
+    }
+    .quarto_poster__content{
+        margin-top: 500px;
+        width: 100%;
+        padding: 40px;
+    }
+    .quarto_poster__img img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .quarto_titolo span::before{
+        height: 8px;
+        margin-top: 2px;
+    }
+}
+
 
 /* Quinto blocco - Immagine di sfondo a metà con testo sopra */
 
@@ -682,6 +748,11 @@ img{
     padding-top: 10px;
 }
 
+@media (max-width: 768px){
+    .quinto_poster__content{
+        width: 100%;
+    }
+}
 
 /* Sesto blocco - Team */
 
