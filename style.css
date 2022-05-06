@@ -906,6 +906,7 @@ img{
     }
     #sesto_poster_img_1{
         width: 60px;
+        margin-right: 30px;
     }
     #sesto_poster_img_2{
         width: 120px
@@ -1065,6 +1066,7 @@ img{
         width: 100%;
         position: absolute;
         padding-left: 40px;
+        padding-right: 40px;
         margin-top: 700px;
     }
     .settimo_poster__content_2 p img{
@@ -1085,6 +1087,13 @@ img{
         right: 0;
         float: right;
         margin-left: 0;
+    }
+    .intouch_button{
+        height: 40px;
+        width: 30vw;
+        font-weight: 450;
+        font-size: 13px;
+        padding-top: 13px;
     }
     input[type="text"]
     {
@@ -1277,10 +1286,35 @@ img{
 
 @media (max-width: 768px) {
     .scroll_back_section a {
-        margin-top: 300px;
+        margin-top: 200px;
     }
     .scroll_back_section a span{
-        margin-top: 300px;
+        margin-top: 200px;
+    }
+    .footer__text{
+        display: none;
+    }
+    .footer__p{
+        display: none;
+    }
+    .logo_bottom{
+        width: 40%;
+        padding-left: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .footer__container{
+        bottom: 0;
+        width: 100vw;
+        height: 70px;
+    }
+    .footer{
+        margin-top: 30px;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 70px;
+        display: flex;
     }
 }
 
