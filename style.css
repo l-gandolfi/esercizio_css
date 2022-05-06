@@ -390,6 +390,9 @@ img{
         max-width: 100%;
         padding-left: 0;
     }
+    .poster__content p img{
+        width: 28px;
+    }
 }
 
 /* Secondo blocco */
@@ -497,6 +500,9 @@ img{
     }
     .secondo_poster{
         margin-bottom: 70px;
+    }
+    .secondo_poster__content p img{
+        width: 28px;
     }
 }
 
@@ -685,7 +691,7 @@ img{
         transform: translateY(-89px);
     }
     .quarto_poster__content{
-        margin-top: 500px;
+        margin-top: 530px;
         width: 100%;
         padding: 40px;
     }
@@ -697,6 +703,10 @@ img{
     .quarto_titolo span::before{
         height: 8px;
         margin-top: 2px;
+    }
+    .quarto_poster__content p img{
+        width: 28px;
+        
     }
 }
 
@@ -748,9 +758,23 @@ img{
     padding-top: 10px;
 }
 
+#virtual_mobile_header{
+    display: none;
+}
+
 @media (max-width: 768px){
     .quinto_poster__content{
+        transform: translateY(35px);
         width: 100%;
+        text-align: center;
+    }
+    .quinto_poster__img{
+        transform: translateY(-230px);
+        width: 100%;
+    }
+    #virtual_mobile_header{
+        display:block;
+        transform: translateY(-30px);
     }
 }
 
@@ -847,6 +871,48 @@ img{
 
 .grid .col{width: 100%;}
 
+@media (max-width: 768px){
+    .sesto_titolo{
+        padding: 40px;
+        padding-top: 60px;
+        text-align: center;
+        justify-content: center;
+    }
+    .sesto_titolo span::before{
+        height: 8px;
+        margin-top: 2px;
+    }
+    .sesto_poster{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 290px;
+    }
+    .sesto_poster__content{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .sesto_poster__content p img{
+        width: 28px;
+    }
+    .sesto_poster__img{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        padding-top: 270px;
+        text-align: center;
+    }
+    #sesto_poster_img_1{
+        width: 60px;
+    }
+    #sesto_poster_img_2{
+        width: 120px
+    }
+}
+
+
 /* Settimo blocco */
 .settimo_titolo{
     max-width: 1400px;
@@ -942,11 +1008,19 @@ img{
     float: right;
 }
 
+#subscribe_mobile_first_header{
+    display: none;
+}
+#subscribe_mobile_second_header{
+    display: none;
+}
+
 .intouch_button a{
     color: #fff; 
 }
 
 @media (max-width: 768px) {
+    /* da controllare cosa si può togliere qui -- versione vecchia */
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img,
     .poster__content{width: 100%;}
@@ -954,6 +1028,68 @@ img{
     .secondo_poster__img,
     .secondo_poster__content{width: 100%;}
     .grid{flex-wrap: wrap;}
+
+    /* da qui in poi è correto */
+    #subscribe_mobile_first_header{
+        display: inline-block;
+        align-self: center;
+        white-space: nowrap;
+    }
+    #subscribe_mobile_second_header{
+        display:inline-block;
+        transform: translateY(300px);
+        white-space: nowrap;
+    }
+    .settimo_titolo{
+        padding: 40px;
+        padding-bottom: 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .settimo_titolo span::before{
+        height: 8px;
+        margin-top: 2px;
+    }
+    .settimo_poster__content{
+        width: 100%;
+        position: absolute;
+        padding: 40px;
+        margin-top: 180px;
+        display: inline-block;
+    }
+    .settimo_poster__content p img{
+        width: 28px;
+    }
+    .settimo_poster__content_2{
+        width: 100%;
+        position: absolute;
+        padding-left: 40px;
+        margin-top: 700px;
+    }
+    .settimo_poster__content_2 p img{
+        width: 28px;
+    }
+    .email_input{
+        width: 60vw;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .subscribe_button{
+        width: 20vw;
+        height: 40px;
+        font-weight: 450;
+        font-size: 13px;
+        padding-top: 13px;
+        margin-bottom: 70px;
+        right: 0;
+        float: right;
+        margin-left: 0;
+    }
+    input[type="text"]
+    {
+        font-size: 11px;
+    }
 }
 
 /* ! Footer */
@@ -1138,6 +1274,16 @@ img{
         opacity: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .scroll_back_section a {
+        margin-top: 300px;
+    }
+    .scroll_back_section a span{
+        margin-top: 300px;
+    }
+}
+
 
 /* ! Helpers */
 

@@ -197,8 +197,9 @@
                     <img src="assets/poster_5.png" alt="">
                 </div>
                 <div class="quinto_poster__content reveal">
-                    <h3 class="med-text">THE <span class="line_span">VIRTUAL</span> B2B</h3>
-                    <h3 class="med-text">ECONOMY</h3>
+                    <h3 id="virtual_first_row_header" class="med-text">THE <span class="line_span">VIRTUAL</span> B2B</h3>
+                    <h3 id="virtual_second_row_header" class="med-text">ECONOMY</h3>
+                    <h3 id="virtual_mobile_header" class="med-text">THE <span class="line_span">VIRTUAL</span> B2B ECONOMY</h3>
                     <p class="pb-0">
                         <span>T</span>he metaverse is the land of opportunity: companies working in Parallel Office are constantly looking for service providers, from developers to designers to consultants. 
                         By joining, you will be able to offer your company's services in a new digital world and reach a truly global audience.
@@ -222,8 +223,8 @@
                     </p>
                 </div> 
                 <div class="sesto_poster__img">
-                    <img src="assets/logo_T_mytokenspace.png" alt="" class="reveal_right">
-                    <img src="assets/logo_4bmc.png" alt="" class="reveal_right">
+                    <img id="sesto_poster_img_1" src="assets/logo_T_mytokenspace.png" alt="" class="reveal_right">
+                    <img id="sesto_poster_img_2" src="assets/logo_4bmc.png" alt="" class="reveal_right">
                 </div>
             </div>
             <div class="scroll_section mt-3">
@@ -233,7 +234,9 @@
 
         <section id="subscribe" class="vertical_height">
             <div class="settimo_titolo mt-3 reveal_top">
-                <h3 class="med-text">STAY <span>TUNED</span> AND GET IN <span>TOUCH</span></h3> 
+                <h3 id="subscribe_desktop_header" class="med-text">STAY <span>TUNED</span> AND GET IN <span>TOUCH</span></h3>
+                <h3 id="subscribe_mobile_first_header" class="med-text">STAY <span>TUNED</span></h3>
+                <h3 id="subscribe_mobile_second_header" class="med-text">LET'S GET IN <span>TOUCH</span></h3>
             </div>
             <div class="settimo_poster mt-1">
                 <div class="settimo_poster__content reveal_left">
@@ -319,6 +322,10 @@
             $('.poster__content').addClass('mt-1');
             $('.secondo_titolo').removeClass('mt-3');
             $('.quarto_poster__content').removeClass('mt-2');
+            $('#virtual_second_row_header').text('');
+            $('#virtual_first_row_header').text('');
+            $('#subscribe_desktop_header').text('');
+            $('#subscribe_mobile_second_header').appendTo('settimo_poster__content_2');
         }
         
 /*
