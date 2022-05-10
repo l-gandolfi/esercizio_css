@@ -235,7 +235,7 @@ img{
     display: flex; 
     width: 100%;
     align-items: center;
-    background: url('assets/home_opening_big_pic.png') no-repeat center center;
+    background: url('assets/home_opening_big_pic.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     /*margin-top: 100px;*/
@@ -343,7 +343,7 @@ img{
 
 
 .poster__img{
-    max-width: 700px;
+    max-width: 710px;
     padding-left: 10px;
 }
 .poster__img img{
@@ -1307,6 +1307,7 @@ img{
         bottom: 0;
         width: 100vw;
         height: 70px;
+        line-height: 70px;
     }
     .footer{
         margin-top: 30px;
