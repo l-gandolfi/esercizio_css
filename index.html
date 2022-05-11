@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -326,6 +326,29 @@
             $('#virtual_first_row_header').text('');
             $('#subscribe_desktop_header').text('');
             $('#subscribe_mobile_second_header').appendTo('settimo_poster__content_2');
+        
+            /* Disable animations on mobile */
+            $('.titolo').removeClass('reveal');
+            $('.poster__content').removeClass('reveal');
+            $('.poster__img').removeClass('reveal');
+            $('.download_button').removeClass('reveal');
+            $('.secondo_titolo').removeClass('reveal_top');
+            $('.secondo_poster__content').removeClass('reveal_top');
+            $('.terzo_poster__img').removeClass('reveal_left');
+            $('.terzo_poster__content').removeClass('reveal_right');
+            $('.quarto_titolo').removeClass('reveal_right');
+            $('.quarto_poster__img').removeClass('reveal_right');
+            $('.quarto_poster__content').removeClass('reveal_right');
+            $('.quinto_poster__img').removeClass('reveal_left');
+            $('.quinto_poster__content').removeClass('reveal');
+            $('.sesto_titolo').removeClass('reveal_left');
+            $('.sesto_poster__content').removeClass('reveal');
+            $('.settimo_titolo').removeClass('reveal_top');
+            $('.settimo_poster__content').removeClass('reveal_left');
+            $('.settimo_poster__content_2').removeClass('reveal_right');
+            $('#sesto_poster_img_1').removeClass('reveal_right');
+            $('#sesto_poster_img_2').removeClass('reveal_right');
+
         }
         
 /*
