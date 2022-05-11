@@ -1,4 +1,25 @@
-/* ! Base Style */
+/* 
+    Welcome to the style sheet. Sections:
+    - Base common styles
+    - Header
+    - Hero
+    - 1' poster (Welcome to parallel office)
+    - 2' poster (Powered by Blockchain)
+    - 3' poster (Exclusive NFT) 
+    - 4' poster (Find your talent and get hired)
+    - 5' poster (The virtual B2B economy)
+    - 6' poster (Team information)
+    - 7' poster (Stay tuned)
+    - Footer
+    - Scroll helper
+*/
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          Base common styles                                   */
+
 body{
     font-family: 'Inter', sans-serif;
 }
@@ -16,8 +37,10 @@ body{
 a{text-decoration: none;}
 
 h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
+/* Only h3 and p are used, just for the padding bottom setting */
 
 p{
+    /* Used in the inner text of all the posters */
     font-family: "PingFang-Medium";
     opacity: 0.6;
     font-size: 24px;
@@ -31,26 +54,28 @@ p{
 
 p span{font-weight: 600; font-size: 40px;}
 
-.big-text{
+.big-text{  
+    /* Used in the title of the 1' poster (Welcome to parallel office) */
     font-size: 70px; 
     font-weight: 900;
     font-family: "Arial Black", "Arial-Black", "ArialBlk";
 }
 .med-text{
+    /* Used in the title of the 2', 3', 4', 5', 6', 7' posters */
     font-size: 48px; 
     font-weight: 900;
     font-family: "Arial Black", "Arial-Black", "ArialBlk";
 }
 .normal-text{
-    /*non usato*/
+    /* Not used */
     font-size: 20px;
 }
 .small-text{
-    /*non usato*/
+    /* Not used */
     font-size: 14px;
 }
 .intro-text{
-    /*non usato*/
+    /* Not used */
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
@@ -69,6 +94,26 @@ p span{font-weight: 600; font-size: 40px;}
     letter-spacing: -0.24px;
     text-align: center;
     padding-top: 25.5px;
+}
+
+
+/* ! Helpers */
+.mt-1{margin-top: 50px;}
+.mt-2{margin-top: 100px;}
+.mt-3{margin-top: 150px;}
+.pb-0{padding-bottom: 0px;}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.glass-box {
+    /* Not used */
+    background: rgba(240,250,255,0.30);
+    box-shadow: 0 2px 60px 0 rgba(61,111,162,0.24);
+    border-radius: 32px;
 }
 
 
@@ -95,8 +140,27 @@ p span{font-weight: 600; font-size: 40px;}
     margin: auto;
 }
 
+/* ! vertical_height */
+.vertical_height{
+    height: 100vh;
+    padding-top: 100px;
+}
 
-/* ! Header */
+@media (max-width: 768px){
+    .vertical_height{
+        padding-top: 0;
+        height: fit-content;
+    }
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - Base common styles ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          Header                                               */
+
 .header{
     width: 100%;
     height: 100px;
@@ -254,8 +318,14 @@ img{
     }
 
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - Header ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* ! Hero */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          Hero                                                 */
 
 .hero{
     height: 100vh;
@@ -293,23 +363,16 @@ img{
         display: none;
     }
 }
-
-/* ! vertical_height */
-.vertical_height{
-    height: 100vh;
-    padding-top: 100px;
-}
-
-@media (max-width: 768px){
-    .vertical_height{
-        padding-top: 0;
-        height: fit-content;
-    }
-}
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - Hero ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
-/* ! Poster */
-.titolo{
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          1' poster (Welcome to parallel office)               */
+
+.primo_titolo{
     max-width: 1400px;
     display: flex;
     position: relative;
@@ -329,16 +392,16 @@ img{
 }
 
 /*
-.titolo h3{
+.primo_titolo h3{
     border: 1px solid blue;
 }
 */
 
-.titolo span{
+.primo_titolo span{
     position: relative;
 }
 
-.titolo span::before{
+.primo_titolo span::before{
     content: "";
     position: absolute;
     top: 100%;
@@ -351,7 +414,7 @@ img{
 }
 
 
-.poster{
+.primo_poster{
     display: flex;
     
     max-width: 1400px;
@@ -369,17 +432,17 @@ img{
 }
 
 
-.poster__img{
+.primo_poster__img{
     max-width: 710px;
     padding-left: 10px;
 }
-.poster__img img{
+.primo_poster__img img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.poster__content{
+.primo_poster__content{
     width: 50%;
     padding: 40px;
 }
@@ -393,7 +456,7 @@ img{
 }
 
 @media (max-width: 768px){
-    .titolo{
+    .primo_titolo{
         margin-left: 15px;
         margin-right: 15px;
         background-size: 25% 45%;
@@ -402,7 +465,7 @@ img{
         height: fit-content;
         padding-top: 100px;
     }
-    .titolo span::before{
+    .primo_titolo span::before{
         content: "";
         position: absolute;
         top: 100%;
@@ -413,16 +476,22 @@ img{
         border-radius: 7px;
         background: linear-gradient(220deg, #4AF0DF 0%, #5F49F4 100%, #5F49F4 100%);
     }
-    .poster__img{
+    .primo_poster__img{
         max-width: 100%;
         padding-left: 0;
     }
-    .poster__content p img{
+    .primo_poster__content p img{
         width: 28px;
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 1' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* Secondo blocco */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          2' poster (Powered by Blockchain)                    */
 
 .secondo_titolo{
     max-width: 1400px;
@@ -532,8 +601,14 @@ img{
         width: 28px;
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 2' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* Terzo blocco - sfondo con testo dentro in blur */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          3' poster (Exclusive NFT)                            */
 
 .terzo_poster{
     display: flex;
@@ -606,8 +681,14 @@ img{
         margin-top: 2px;
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 3' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* Quarto blocco - immagine grigia */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          4' poster (Find your talent and get hired)           */
 
 .quarto_titolo{
     max-width: 1400px;
@@ -736,9 +817,14 @@ img{
         
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 4' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
-/* Quinto blocco - Immagine di sfondo a metà con testo sopra */
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          5' poster (The virtual B2B economy)                  */
 
 .quinto_poster{
     display: flex;
@@ -804,8 +890,14 @@ img{
         transform: translateY(-30px);
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 5' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* Sesto blocco - Team */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          6' poster (Team information)                         */
 
 .sesto_titolo{
     max-width: 1400px;
@@ -940,9 +1032,15 @@ img{
         width: 120px
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 6' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
-/* Settimo blocco */
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          7' poster (Stay tuned)                               */
+
 .settimo_titolo{
     max-width: 1400px;
     display: flex;
@@ -1050,9 +1148,9 @@ img{
 
 @media (max-width: 768px) {
     /* da controllare cosa si può togliere qui -- versione vecchia */
-    .poster{flex-wrap: wrap;height: auto;}
-    .poster__img,
-    .poster__content{width: 100%;}
+    .primo_poster{flex-wrap: wrap;height: auto;}
+    .primo_poster__img,
+    .primo_poster__content{width: 100%;}
     .secondo_poster{flex-wrap: wrap;height: auto;}
     .secondo_poster__img,
     .secondo_poster__content{width: 100%;}
@@ -1128,8 +1226,15 @@ img{
         font-size: 11px;
     }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - 7' poster ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* ! Footer */
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          Footer                                               */
+
 .footer{
     width: 100%;
     bottom:0;
@@ -1177,7 +1282,42 @@ img{
     vertical-align: middle;
 }
 
-/* Scroll Helper */
+@media (max-width: 768px) {
+    .footer{
+        margin-top: 30px;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 70px;
+        display: flex;
+    }
+    .footer__container{
+        bottom: 0;
+        width: 100vw;
+        height: 70px;
+        line-height: 70px;
+    }
+    .footer__text{
+        display: none;
+    }
+    .footer__p{
+        display: none;
+    }
+    .logo_bottom{
+        width: 40%;
+        padding-left: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - Footer ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+/* _____________________________________________________________________________ */
+/* ----------------------------------------------------------------------------- */
+/*                          Scroll helper                                        */
 
 .scroll_section a {
     position: relative;
@@ -1319,50 +1459,7 @@ img{
     .scroll_back_section a span{
         margin-top: 200px;
     }
-    .footer__text{
-        display: none;
-    }
-    .footer__p{
-        display: none;
-    }
-    .logo_bottom{
-        width: 40%;
-        padding-left: 15px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .footer__container{
-        bottom: 0;
-        width: 100vw;
-        height: 70px;
-        line-height: 70px;
-    }
-    .footer{
-        margin-top: 30px;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 70px;
-        display: flex;
-    }
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ - END - Scroll helper ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
-/* ! Helpers */
-
-.mt-1{margin-top: 50px;}
-.mt-2{margin-top: 100px;}
-.mt-3{margin-top: 150px;}
-.pb-0{padding-bottom: 0px;}
-
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.glass-box {
-    background: rgba(240,250,255,0.30);
-    box-shadow: 0 2px 60px 0 rgba(61,111,162,0.24);
-    border-radius: 32px;
-}
