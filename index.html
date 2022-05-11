@@ -66,7 +66,8 @@
                     <span class="hamburger__span" ></span>
                     <span class="hamburger__span" ></span>
                     <span class="arrow__down hidden" id="arrow1"></span><br>
-                    <span class="arrow__down hidden" id="arrow2"></span>
+                    <span class="arrow__down hidden" id="arrow2"></span><br>
+                    <span class="arrow__down hidden" id="arrow3"></span>
                 </div>
             </div>
         </div>
@@ -306,12 +307,16 @@
                     $("#arrow1").addClass("show");
                     $("#arrow2").removeClass("hidden");
                     $("#arrow2").addClass("show")
+                    $("#arrow3").removeClass("hidden");
+                    $("#arrow3").addClass("show")
                 } else {
                     $(".hamburger__span").show();
                     $("#arrow1").removeClass("show");
                     $("#arrow1").addClass("hidden");
                     $("#arrow2").removeClass("show");
                     $("#arrow2").addClass("hidden");
+                    $("#arrow3").removeClass("show");
+                    $("#arrow3").addClass("hidden");
                 }
                 //$(".hamburger__span").toggleClass("hamburger__span--open");
             });

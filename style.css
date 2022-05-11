@@ -219,12 +219,12 @@ img{
     .hamburger__span--open {
         background-color: #5F49F4;
         border-width: 0 3px 3px 0;
-        border: 1px solid red;
+        border: 1px solid white;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
     }
     .arrow__down {
-        border: solid rgb(253, 5, 5);
+        border: solid rgb(255, 255, 255);
         border-width: 0 3px 3px 0;
         height: 3px;
         padding: 8px;
@@ -232,6 +232,17 @@ img{
         margin-left: 2px;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
+    }
+    #arrow1{
+        margin-bottom: 0px;
+    }
+    #arrow2{
+        position: absolute;
+        -webkit-transform: rotate(45deg) translateX(-23px) translateY(-23px);
+    }
+    #arrow3{
+        position: absolute;
+        -webkit-transform: rotate(45deg) translateX(-19px) translateY(-19px);
     }
 
 }
